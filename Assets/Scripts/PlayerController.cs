@@ -3,6 +3,9 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    private static readonly int MovementSpeed = Animator.StringToHash("MovementSpeed");
+    private static readonly int Grounded = Animator.StringToHash("Grounded");
+    
     #region Inspector
     
     [Header("Movement")]
@@ -18,6 +21,18 @@ public class PlayerController : MonoBehaviour
     [Min(0)]
     [Tooltip("How fast the character rotates around it's y-axis.")]
     [SerializeField] private float rotationsSpeed = 10f;
+
+    [Header("Slope Movement")]
+
+    [Tooltip("How much additional gravity to apply while walking down a slope")]
+    [SerializeField] private float pullDownForce = 5f;
+
+    [Tooltip("Layer mask used for the raycast.")]
+    [SerializeField] private LayerMask raycastMask;
+    
+    [Min(0)]
+    [Tooltip("Lenght of the raycast for checking for slopes in uu.")]
+    [SerializeField] private float rayCastLength = 0.5f;
 
     [Header("Camera")]
 
@@ -58,6 +73,15 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Invert Y-axis for controller.")]
     [SerializeField] private bool invertY = true;
 
+    [Header("Animations")]
+
+    [Tooltip("Animator of the character mesh")]
+    [SerializeField] private Animator animator;
+    
+    [Min(0)]
+    [Tooltip("Time in sec the character has to be in the air before the animator rects")]
+    [SerializeField] private float coyoteTime = 0.2f;
+
     #endregion
 
     private CharacterController characterController;
@@ -72,7 +96,13 @@ public class PlayerController : MonoBehaviour
     private Quaternion characterTargetRotation = Quaternion.identity;
     private Vector2 cameraRotation;
     private Vector3 lastMovement;
-    
+
+    private bool isGrounded = true;
+    private float airTime;
+
+    private Interactable selectedInteractable;
+
+
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
@@ -82,7 +112,9 @@ public class PlayerController : MonoBehaviour
         //Cache the look and move input actions specifically for easier usage.
         lookAction = input.Player.Look;
         moveAction = input.Player.Move;
-        // TODO Subscribe to input events
+        
+        // Subscribe to input events
+        input.Player.Interact.performed += Interact;
     }
 
     #region Unity Event Function
@@ -98,6 +130,10 @@ public class PlayerController : MonoBehaviour
 
         Rotate(moveInput);
         Move(moveInput);
+        
+        CheckGround();
+        
+        UpdateAnimator();
     }
 
     private void LateUpdate()
@@ -112,8 +148,23 @@ public class PlayerController : MonoBehaviour
 
     private void OnDestroy()
     {
-        // TODO unsubscribe from to input events
+        // Unsubscribe from input events
+        input.Player.Interact.performed -= Interact;
     }
+
+    #region Physics
+
+    private void OnTriggerEnter(Collider other)
+    {
+        TrySelectInteractable(other);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        TryDeselectInteractable(other);
+    }
+
+    #endregion
 
     #endregion
 
@@ -126,6 +177,7 @@ public class PlayerController : MonoBehaviour
     }
 
     #endregion
+
     #region Movement
 
     private void Rotate(Vector2 moveInput)
@@ -174,7 +226,33 @@ public class PlayerController : MonoBehaviour
 
         characterController.SimpleMove(movement);
 
+        if (Physics.Raycast(transform.position + Vector3.up * 0.01f, Vector3.down, out RaycastHit hit, rayCastLength, raycastMask, QueryTriggerInteraction.Ignore))
+        {
+            if (Vector3.ProjectOnPlane(movement, hit.normal).y < 0)
+            {
+                characterController.Move(Vector3.down * (pullDownForce * Time.deltaTime));
+            }
+        }
+
         lastMovement = movement;
+    }
+
+    #endregion
+
+    #region GroundCheck
+
+    private void CheckGround()
+    {
+        if (characterController.isGrounded)
+        {
+            airTime = 0;
+        }
+        else
+        {
+            airTime += Time.deltaTime;
+        }
+
+        isGrounded = airTime < coyoteTime;
     }
 
     #endregion
@@ -231,6 +309,60 @@ public class PlayerController : MonoBehaviour
         }
 
         return lookAction.activeControl.name == "delta";
+    }
+
+    #endregion
+
+    #region Animator
+
+    private void UpdateAnimator()
+    {
+        Vector3 velocity = lastMovement;
+        velocity.y = 0;
+        float speed = velocity.magnitude;
+        
+        animator.SetFloat(MovementSpeed, speed);
+        animator.SetBool(Grounded, isGrounded);
+    }
+
+    #endregion
+
+    #region Interaction
+
+    private void Interact(InputAction.CallbackContext _)
+    {
+        if (selectedInteractable != null)
+        {
+            selectedInteractable.Interact();
+        }
+    }
+    
+    private void TrySelectInteractable(Collider other)
+    {
+        Interactable interactable = other.GetComponent<Interactable>();
+
+        if (interactable == null) { return; }
+
+        if (selectedInteractable != null)
+        {
+            selectedInteractable.Deselect();
+        }
+
+        selectedInteractable = interactable;
+        selectedInteractable.Select();
+    }
+
+    private void TryDeselectInteractable(Collider other)
+    {
+        Interactable interactable = other.GetComponent<Interactable>();
+
+        if (interactable == null) { return; }
+
+        if (interactable == selectedInteractable)
+        {
+            selectedInteractable.Deselect();
+            selectedInteractable = null;
+        }
     }
 
     #endregion
