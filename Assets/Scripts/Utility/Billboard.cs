@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Billboard : MonoBehaviour
 {
-    private Camera camera;
+    private new Camera camera;
 
     #region Unity Event Region
 

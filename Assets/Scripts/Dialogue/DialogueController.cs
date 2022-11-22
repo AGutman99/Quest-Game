@@ -1,16 +1,24 @@
 
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 using Ink;
 using Ink.Runtime;
 
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class DialogueController : MonoBehaviour
 {
+    private const string SpeakerSeparator = ":";
+    private const string EscapedColon = ": :";
+    private const string EscapedColonPlaceholder = "$";
+        
     public static event Action DialogueOpened;
     public static event Action DialogueClosed;
+
+    public static event Action<string> InkEvent;
     
     #region Inspector
 
@@ -32,6 +40,7 @@ public class DialogueController : MonoBehaviour
     {
         inkStory = new Story(inkAsset.text);
         inkStory.onError += OnInkError;
+        inkStory.BindExternalFunction<string>("Unity_Event", Unity_Event);
     }
 
     private void OnEnable()
@@ -78,7 +87,9 @@ public class DialogueController : MonoBehaviour
     private void CloseDialogue()
     {
         dialogueBox.gameObject.SetActive(false);
-        // TODO Clean up
+        
+        // Deselect everything in the UI
+        EventSystem.current.SetSelectedGameObject(null);
         
         DialogueClosed?.Invoke();
     }
@@ -91,19 +102,22 @@ public class DialogueController : MonoBehaviour
             return;
         }
 
-        DialogueLine line = new DialogueLine();
+        DialogueLine line;
         
         if (CanContinue())
         {
             string inkLine = inkStory.Continue();
             // Skip empty lines
-            if (inkLine == string.Empty)
+            if (string.IsNullOrWhiteSpace(inkLine))
             {
                 ContinueDialogue();
                 return;
             }
-            // TODO Parse Text.
-            line.text = inkLine;
+            line = ParseText(inkLine, inkStory.currentTags);
+        }
+        else
+        {
+            line = new DialogueLine();
         }
 
         line.choices = inkStory.currentChoices;
@@ -163,6 +177,49 @@ public class DialogueController : MonoBehaviour
         }
     }
 
+        private DialogueLine ParseText(string inkLine, List<string> tags)
+        {
+            // Replace :: with $ as a Placeholder to prevent splitting
+            inkLine = inkLine.Replace(EscapedColon, EscapedColonPlaceholder);
+            
+            // Split string into parts at :
+            List<string> parts = inkLine.Split(SpeakerSeparator).ToList();
+
+            string speaker = null;
+            string text = string.Empty;
+
+            switch (parts.Count)
+            {
+                case 1:
+                    text = parts[0];
+                    break;
+                case 2:
+                    speaker = parts[0];
+                    text = parts[1];
+                    break;
+                default:
+                    Debug.LogWarning($"Ink dialogue line was split at more {SpeakerSeparator} than expected. Please make sure to usw {EscapedColon} for {SpeakerSeparator}");
+                    goto case 2;
+            }
+
+            DialogueLine line = new DialogueLine();
+
+            line.speaker = speaker?.Trim();
+            line.text = text.Replace(EscapedColonPlaceholder, SpeakerSeparator).Trim();
+
+            if (tags.Contains("thought"))
+            {
+                line.text = $"<i>{line.text}</i>";
+            }
+            
+            return line;
+        }
+
+        private void Unity_Event(string eventName)
+        {
+            InkEvent?.Invoke(eventName);
+        }
+
     #endregion
 }
 
@@ -172,6 +229,6 @@ public struct DialogueLine
     public string text;
     public List<Choice> choices;
 
-    //Here can we also add other informations like
+    // Here can we also add other informations like
     // speaker images or sounds
 }
