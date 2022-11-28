@@ -64,8 +64,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6781881830417917004, guid: 6fb4716c8ab3f7e48aa62df5aa3deaa1,
         type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000,
+        type: 0}
+    - target: {fileID: 6781881830417917004, guid: 6fb4716c8ab3f7e48aa62df5aa3deaa1,
+        type: 3}
       propertyPath: m_Name
-      value: _Interactable
+      value: _NPC
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fb4716c8ab3f7e48aa62df5aa3deaa1, type: 3}

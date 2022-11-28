@@ -1,4 +1,3 @@
-using System;
 
 using UnityEngine;
 
@@ -24,5 +23,4 @@ public class QuestEntry : MonoBehaviour
     {
         statusIndicator.SetActive(fulfilled);
     }
-
 }

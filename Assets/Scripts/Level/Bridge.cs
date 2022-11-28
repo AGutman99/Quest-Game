@@ -1,6 +1,6 @@
-using System;
-
 using DG.Tweening;
+
+using UnityEditor;
 
 using UnityEngine;
 
@@ -20,6 +20,8 @@ public class Bridge : MonoBehaviour
 
     [Min(0)]
     [SerializeField] private float moveDuration = 1f;
+
+    [SerializeField] private Ease ease = DOTween.defaultEaseType;
 
     #endregion
     
@@ -62,6 +64,11 @@ public class Bridge : MonoBehaviour
 
     private void MovePlatform(Vector3 targetPosition)
     {
-        platform.DOLocalMove(targetPosition, moveDuration);
+        float speed = (retractedPosition - extendedPosition).magnitude / moveDuration;
+        
+        platform.DOKill();
+        platform.DOLocalMove(targetPosition, speed)
+                .SetSpeedBased()
+                .SetEase(ease);
     }
 }
