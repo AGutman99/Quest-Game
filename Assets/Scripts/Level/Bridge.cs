@@ -1,7 +1,5 @@
 using DG.Tweening;
 
-using UnityEditor;
-
 using UnityEngine;
 
 public class Bridge : MonoBehaviour

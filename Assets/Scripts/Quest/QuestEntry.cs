@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class QuestEntry : MonoBehaviour
@@ -7,10 +6,11 @@ public class QuestEntry : MonoBehaviour
 
     [Tooltip("The icon to indicate the status of the quest")]
     [SerializeField] private GameObject statusIndicator;
+    
 
     #endregion
 
-    #region Uniry EVent Functions
+    #region Unity Event Functions
 
     private void Awake()
     {
