@@ -1,7 +1,7 @@
 === librarian ===
 
 = gate_start
-Librarian: Hello and welcome to MiauzAcademy! I'm the school librarian and I'll help you to get threw your first day of school. 
+Librarian: Hello and welcome to MiauzAcademy! I'm the school librarian and I'll help you to get through your first day of school. 
 You: Hello! Thank you so much!
 Librarian: Since this is your first day here, you have to get to know our houses. There are four different elements Fire, Water, Air and Earth. Each element represents a different specialization. 
 You: That sounds intereseting..

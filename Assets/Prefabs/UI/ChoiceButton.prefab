@@ -17,6 +17,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5526219556345613202, guid: 27ef1440f9981f74e8a8c97d2e81d986,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526219556345613202, guid: 27ef1440f9981f74e8a8c97d2e81d986,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5e67a3cbe1b2021419fd046464af405e,
+        type: 3}
     - target: {fileID: 5594807823121983130, guid: 27ef1440f9981f74e8a8c97d2e81d986,
         type: 3}
       propertyPath: m_Pivot.x
@@ -55,12 +66,12 @@ PrefabInstance:
     - target: {fileID: 5594807823121983130, guid: 27ef1440f9981f74e8a8c97d2e81d986,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 5594807823121983130, guid: 27ef1440f9981f74e8a8c97d2e81d986,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 5594807823121983130, guid: 27ef1440f9981f74e8a8c97d2e81d986,
         type: 3}
@@ -155,7 +166,7 @@ PrefabInstance:
     - target: {fileID: 8107814572959236296, guid: 27ef1440f9981f74e8a8c97d2e81d986,
         type: 3}
       propertyPath: m_Name
-      value: ChoiceButton.001
+      value: ChoiceButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27ef1440f9981f74e8a8c97d2e81d986, type: 3}
