@@ -9,5 +9,5 @@ You: It's working! #thought
 -> END
 
 = open
-You: I can go to the next area!
+You: I can go to the next area! #thought
 -> END
