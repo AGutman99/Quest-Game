@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 1904526336957447953}
   - component: {fileID: 2207300704315113342}
   - component: {fileID: 8456083558670416725}
+  - component: {fileID: 557806718955379547}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -351,6 +352,26 @@ MonoBehaviour:
   invertY: 1
   animator: {fileID: 6677958859036690979}
   coyoteTime: 0.2
+--- !u!114 &557806718955379547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8164243316312662583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 286a091e8e902b94b9a2a1d859bb9a77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onTriggerEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onTriggerExit:
+    m_PersistentCalls:
+      m_Calls: []
+  filterOnTag: 1
+  reactOn: Inside
 --- !u!1 &8853079557690027239
 GameObject:
   m_ObjectHideFlags: 0

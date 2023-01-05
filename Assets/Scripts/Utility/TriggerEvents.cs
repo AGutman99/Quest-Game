@@ -22,7 +22,12 @@ public class TriggerEvents : MonoBehaviour
     [Tooltip("Tag og the interacting Collider to filter on")]
     [SerializeField] private string reactOn = PlayerTag;
 
+    [Header("Advanced")]
+    [SerializeField] private bool combineTriggers = true;
+
     #endregion
+
+    private int triggerCount = 0;
 
     #region Unity Event Function
     
@@ -39,12 +44,20 @@ public class TriggerEvents : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (filterOnTag && !other.CompareTag(reactOn)) { return; }
+
+        triggerCount++;
+        
+        if (combineTriggers && triggerCount != 1) { return; }
         
         onTriggerEnter.Invoke(other);
     }
     private void OnTriggerExit(Collider other)
     {
         if (filterOnTag && !other.CompareTag(reactOn)) { return; }
+
+        triggerCount--;
+        
+        if (combineTriggers && triggerCount != 0) { return; }
         
         onTriggerExit.Invoke(other);
     }

@@ -11,7 +11,7 @@ public class HandleAnimation : MonoBehaviour
         sequence.Complete(true);
 
         sequence = DOTween.Sequence();
-        sequence.Append(transform.DORotate(new Vector3(0, 0, -130), 2, RotateMode.LocalAxisAdd));
+        sequence.Append(transform.DORotate(new Vector3(0, 0, -90), 2, RotateMode.LocalAxisAdd));
     }
 }
     
