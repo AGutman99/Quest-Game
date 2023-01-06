@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 6364278951051312256}
   - component: {fileID: 6364278951051312271}
   - component: {fileID: 6364278951051312270}
+  - component: {fileID: 1370453315}
   m_Layer: 5
   m_Name: Audio
   m_TagString: Untagged
@@ -171,10 +172,10 @@ RectTransform:
   m_Father: {fileID: 6364278951231930098}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 5, y: -15}
-  m_SizeDelta: {x: 300, y: 30}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 300, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6364278951051312256
 CanvasRenderer:
@@ -257,7 +258,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6364278951676293678}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: OpenMenu
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: Menu, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1370453315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6364278951051312268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22bd9f88ab1aea4bb267f3d3a813a0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6364278951231930097
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,13 +294,14 @@ GameObject:
   - component: {fileID: 6364278951231930098}
   - component: {fileID: 6364278951231930100}
   - component: {fileID: 6364278951231930099}
+  - component: {fileID: 1602415052}
   m_Layer: 5
   m_Name: Options Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6364278951231930098
 RectTransform:
   m_ObjectHideFlags: 0
@@ -322,10 +348,10 @@ MonoBehaviour:
   m_Padding:
     m_Left: 10
     m_Right: 0
-    m_Top: 0
+    m_Top: -35
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: 155
+  m_Spacing: 135
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -333,6 +359,21 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1602415052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6364278951231930097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1407967f7d164e4094ed41ffd2d0fb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectOnOpen: {fileID: 6364278951051312270}
+  selectPreviousOnClose: 1
+  disableOnAwake: 1
 --- !u!1 &6364278951676293676
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,6 +522,7 @@ GameObject:
   - component: {fileID: 6364278952101181922}
   - component: {fileID: 6364278952101181921}
   - component: {fileID: 6364278952101181920}
+  - component: {fileID: 1906272246}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -504,10 +546,10 @@ RectTransform:
   m_Father: {fileID: 6364278951231930098}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 5, y: -385}
-  m_SizeDelta: {x: 300, y: 30}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 300, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6364278952101181922
 CanvasRenderer:
@@ -590,7 +632,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6364278952556856412}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: OpenMenu
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: Menu, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1906272246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6364278952101181934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22bd9f88ab1aea4bb267f3d3a813a0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6364278952556856410
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,6 +805,7 @@ GameObject:
   - component: {fileID: 6364278952826428426}
   - component: {fileID: 6364278952826428425}
   - component: {fileID: 6364278952826428424}
+  - component: {fileID: 899974340}
   m_Layer: 5
   m_Name: Controlls
   m_TagString: Untagged
@@ -762,10 +829,10 @@ RectTransform:
   m_Father: {fileID: 6364278951231930098}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 5, y: -200}
-  m_SizeDelta: {x: 400, y: 30}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 400, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6364278952826428426
 CanvasRenderer:
@@ -848,4 +915,28 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6364278951003681101}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: OpenMenu
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: Menu, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &899974340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6364278952826428662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d22bd9f88ab1aea4bb267f3d3a813a0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
