@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 2207300704315113342}
   - component: {fileID: 8456083558670416725}
   - component: {fileID: 557806718955379547}
+  - component: {fileID: 1284328680}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -336,11 +337,11 @@ MonoBehaviour:
   movementSpeed: 10
   speedChangeRate: 10
   rotationsSpeed: 10
-  pullDownForce: 5
+  pullDownForce: 8
   raycastMask:
     serializedVersion: 2
     m_Bits: 1
-  rayCastLength: 0.3
+  rayCastLength: 0.5
   cameraTarget: {fileID: 8685660475615041760}
   verticalCameraRotationMin: -30
   verticalCameraRotationMax: 70
@@ -372,6 +373,19 @@ MonoBehaviour:
   filterOnTag: 1
   reactOn: Inside
   combineTriggers: 1
+--- !u!114 &1284328680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8164243316312662583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbef097213ef35e4b815fd94e4cb12f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 1.5
 --- !u!1 &8853079557690027239
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,6 +497,34 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 2a894a877d8c32a40882317bbcfd812d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc7a65afcb29ff14d9ab3059f2f54b14, type: 3}
+--- !u!1 &74059029172947683 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: cc7a65afcb29ff14d9ab3059f2f54b14,
+    type: 3}
+  m_PrefabInstance: {fileID: 992610074487601074}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &178667310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74059029172947683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39415f9c05f85bf40b38c2c1a4e0055a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepSound: {fileID: 8737959584416356406}
+  stepSoundParameterName: surface
+  defaultStepSoundPhysicMaterial: {fileID: 13400000, guid: e600dcb80d711af4e8dbaa5a39de0271,
+    type: 2}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  onStep:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &742193335228420185 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cc7a65afcb29ff14d9ab3059f2f54b14,

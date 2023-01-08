@@ -26,6 +26,7 @@ public class MenuController : MonoBehaviour
     [Tooltip("Hides the previous menus when opening a new menu on-top")]
     [SerializeField] private bool hidePreviousMenu;
     
+    
     #endregion
 
     private GameInput input;
@@ -39,7 +40,7 @@ public class MenuController : MonoBehaviour
         input = new GameInput();
 
         input.UI.ToggleMenu.performed += ToggleMenu;
-        input.UI.ToggleMenu.performed += GoBackMenu;
+        input.UI.GoBackMenu.performed += GoBackMenu;
 
         openedMenus = new Stack<Menu>();
         
@@ -69,7 +70,7 @@ public class MenuController : MonoBehaviour
     private void OnDestroy()
     {
         input.UI.ToggleMenu.performed -= ToggleMenu;
-        input.UI.ToggleMenu.performed -= GoBackMenu;
+        input.UI.GoBackMenu.performed -= GoBackMenu;
     }
 
     #endregion
@@ -143,7 +144,7 @@ public class MenuController : MonoBehaviour
     {
         if (!baseMenu.gameObject.activeSelf)
         {
-            OpenMenu((baseMenu));
+            OpenMenu(baseMenu);
         }
         else
         {
