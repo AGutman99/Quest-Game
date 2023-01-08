@@ -181,11 +181,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 562469973
-      Data2: 1212838504
-      Data3: -2023204713
-      Data4: 681898099
-    Path: event:/PlayerCharacter/footsteps
+      Data1: 1556038629
+      Data2: 1190439275
+      Data3: 1049039246
+      Data4: -97373177
+    Path: event:/Steps/Steps
   Event: 
   PlayEvent: 0
   StopEvent: 0

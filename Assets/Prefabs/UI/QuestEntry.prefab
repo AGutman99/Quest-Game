@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 2478523590884812134}
   - component: {fileID: 4205946816488364408}
   - component: {fileID: 4349863477110022449}
+  - component: {fileID: 7876418509109672945}
   m_Layer: 0
   m_Name: QuestEntry
   m_TagString: Untagged
@@ -302,6 +303,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusIndicator: {fileID: 6063724082686406152}
+--- !u!225 &7876418509109672945
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8089716888424711445}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &9076228905103409812
 GameObject:
   m_ObjectHideFlags: 0

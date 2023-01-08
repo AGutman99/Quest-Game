@@ -65,7 +65,7 @@ public class Menu : MonoBehaviour
     {
         if (selectPreviousOnClose && selectOnClose != null)
         {
-        //     selectOnClose.StartCoroutine(DelayedSelect(selectOnClose));
+            //selectOnClose.StartCoroutine(DelayedSelect(selectOnClose));
             Select(selectOnClose);
         }
         

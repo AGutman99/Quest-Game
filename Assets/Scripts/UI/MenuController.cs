@@ -25,6 +25,9 @@ public class MenuController : MonoBehaviour
 
     [Tooltip("Hides the previous menus when opening a new menu on-top")]
     [SerializeField] private bool hidePreviousMenu;
+
+    [Tooltip("The Background of the Pause/Options Menu")]
+    [SerializeField] private GameObject optionsBG;
     
     
     #endregion
@@ -101,11 +104,17 @@ public class MenuController : MonoBehaviour
         if (menu == baseMenu)
         {
             BaseMenuOpening?.Invoke();
+            optionsBG.SetActive(true);
         }
 
         if (hidePreviousMenu && openedMenus.Count > 0)
         {
             openedMenus.Peek().Hide();
+        }
+
+        if (preventClosing && openedMenus.Count == 1)
+        {
+            optionsBG.SetActive(true);
         }
         
         menu.Open();
@@ -137,12 +146,18 @@ public class MenuController : MonoBehaviour
         if (closingMenu == baseMenu)
         {
             BaseMenuClosed?.Invoke();
+            optionsBG.SetActive(false);
+        }
+
+        if (preventClosing && openedMenus.Count == 1)
+        {
+            optionsBG.SetActive(false);
         }
     }
 
     private void ToggleMenu(InputAction.CallbackContext _)
     {
-        if (!baseMenu.gameObject.activeSelf)
+        if (!baseMenu.gameObject.activeSelf && openedMenus.Count <= 1)
         {
             OpenMenu(baseMenu);
         }

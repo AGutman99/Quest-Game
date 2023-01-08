@@ -491,10 +491,11 @@ MonoBehaviour:
   m_Name: FMODStudioSettings
   m_EditorClassIdentifier: 
   switchSettingsMigration: 1
-  HasSourceProject: 0
-  HasPlatforms: 0
-  sourceProjectPath: 
-  sourceBankPath: FMODAssets
+  HasSourceProject: 1
+  HasPlatforms: 1
+  sourceProjectPath: ../../../Desktop/2. Semester/Sound/Magic Miauz Sounds - Music/Magic
+    Miauz Sounds - Music.fspro
+  sourceBankPath: ../../../Desktop/2. Semester/Sound/Magic Miauz Sounds - Music/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1

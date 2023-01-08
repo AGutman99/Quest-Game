@@ -52,11 +52,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -850206295
-      Data2: 1323658626
-      Data3: 4759481
-      Data4: 1170542732
-    Path: event:/UI/ui_hover
+      Data1: 567650664
+      Data2: 1215022679
+      Data3: -1338562115
+      Data4: 49012393
+    Path: event:/UI/UI Klick
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -119,11 +119,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -2089040265
-      Data2: 1244051457
-      Data3: 585281953
-      Data4: -1407978525
-    Path: event:/UI/ui_click
+      Data1: 567650664
+      Data2: 1215022679
+      Data3: -1338562115
+      Data4: 49012393
+    Path: event:/UI/UI Klick
   Event: 
   PlayEvent: 0
   StopEvent: 0
