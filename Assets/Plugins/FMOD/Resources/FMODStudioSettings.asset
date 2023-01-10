@@ -497,7 +497,7 @@ MonoBehaviour:
     Miauz Sounds - Music.fspro
   sourceBankPath: ../../../Desktop/2. Semester/Sound/Magic Miauz Sounds - Music/Build
   sourceBankPathUnformatted: 
-  BankRefreshCooldown: 5
+  BankRefreshCooldown: 1
   ShowBankRefreshWindow: 1
   AutomaticEventLoading: 1
   BankLoadType: 0

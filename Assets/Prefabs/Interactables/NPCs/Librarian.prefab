@@ -67,6 +67,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Librarian
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 44dd6e77ba96e184daccaab3b8a62a3c,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9db4669fa2af0b04e9e92e77e9c1c8d9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 44dd6e77ba96e184daccaab3b8a62a3c, type: 3}
 --- !u!1001 &2760269657135673332

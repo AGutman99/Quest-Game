@@ -26,13 +26,13 @@ public class QuestEntry : MonoBehaviour
     private void OnEnable()
     {
         this.DOKill();
-        DOTween.To(() => 0f, x => canvasGroup.alpha = x, 1f, 0.8f);
+        DOTween.To(() => 0f, x => canvasGroup.alpha = x, 1f, 0.9f);
     }
 
     private void OnDisable()
     {
         this.DOKill();
-        DOTween.To(() => 1f, x => canvasGroup.alpha = x, 0f, 0.8f);
+        DOTween.To(() => 1f, x => canvasGroup.alpha = x, 0f, 0.9f);
     }
 
     #endregion

@@ -90,7 +90,7 @@ ModelImporter:
       takeName: Armature Main|2_Main_Run
       internalID: 0
       firstFrame: 0
-      lastFrame: 36
+      lastFrame: 24
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -162,14 +162,14 @@ ModelImporter:
       takeName: "Armature Main|2_Sch\xFCler_Walk"
       internalID: 0
       firstFrame: 0
-      lastFrame: 46
+      lastFrame: 40
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -181,7 +181,21 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.08470588
+        functionName: PlaySound
+        data: Step
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.5647059
+        functionName: PlaySound
+        data: Step
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
