@@ -115,6 +115,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a45e01943344ef4479dddb2bc36cc8fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
+  randomOrder: 0
+  waypoints: []
+  waitAtWaypoint: 1
+  waitDuration: {x: 1, y: 5}
 --- !u!1001 &6477460651723501604
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -135,7 +140,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7bebd2717bfc82548909d199842f4ef6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.08
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7bebd2717bfc82548909d199842f4ef6,
         type: 3}
@@ -145,7 +150,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7bebd2717bfc82548909d199842f4ef6,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7bebd2717bfc82548909d199842f4ef6,
         type: 3}
@@ -155,7 +160,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7bebd2717bfc82548909d199842f4ef6,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7bebd2717bfc82548909d199842f4ef6,
         type: 3}
@@ -170,7 +175,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7bebd2717bfc82548909d199842f4ef6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7bebd2717bfc82548909d199842f4ef6,
         type: 3}
