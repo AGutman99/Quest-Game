@@ -1165,6 +1165,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: GateHandleMech
       objectReference: {fileID: 0}
+    - target: {fileID: 8171429150082765493, guid: 6fb4716c8ab3f7e48aa62df5aa3deaa1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8171429150082765493, guid: 6fb4716c8ab3f7e48aa62df5aa3deaa1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8171429150082765493, guid: 6fb4716c8ab3f7e48aa62df5aa3deaa1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8596586414691742972, guid: 6fb4716c8ab3f7e48aa62df5aa3deaa1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fb4716c8ab3f7e48aa62df5aa3deaa1, type: 3}
 --- !u!4 &4557669073903251021 stripped

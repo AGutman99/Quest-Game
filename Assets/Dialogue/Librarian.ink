@@ -1,12 +1,23 @@
 === librarian ===
 
-= gate_start
-Librarian: Hello and welcome to MiauzAcademy! I'm the school librarian and I'll help you to get through your first day of school. 
-You: Hello! Thank you so much!
-Librarian: Since this is your first day here, you have to get to know our houses. There are four different elements Fire, Water, Air and Earth. Each element represents a different specialization. 
-You: That sounds intereseting...
+= intro_start
+Librarian: Hello and welcome to MiauzAcademy! 
+Librarian: I'm the school librarian and I'll help you to get through your first day of school. 
+Tammy: Hello! Thank you so much!
+Librarian: Since this is your first day here, you have to get to know our houses.
+Librarian: There are four different elements Fire, Water, Air and Earth. Each element represents a different specialization. 
+Tammy: That sounds intereseting...
 Librarian: So your task for today is to decide in which house you want to go. Therefore you have to do different tasks.
-You: Alright! Where do I start?
+Tammy: Alright! Where do I start?
+Librarian: At first go to the Air Teacher right behind the open gate. He will give you the first task. 
+Tammy: Ok! See you later!  
+-> END 
+
+=intro_running
+Librarian: Please go to the Air Teacher. 
+-> END
+
+= gate_start
 Librarian: At first, you have to go through the big gate... But the handle is lost. Maybe you can find it? Go search near the big cauldron because I couldn't find it here. 
 You: Well... That sounds easy!
 -> END

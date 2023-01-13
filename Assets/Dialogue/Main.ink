@@ -6,6 +6,8 @@ INCLUDE Librarian.ink
 INCLUDE GateHandle.ink
 INCLUDE TeleskopTEST.ink
 INCLUDE AirStudent.ink
+INCLUDE AirTeacher.ink
+
 
 
 
