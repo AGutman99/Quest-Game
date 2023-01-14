@@ -1,4 +1,5 @@
 === airteacher ===
+{}
 
 = air_quest_start
 Air teacher: Hey! You must be new! Welcome to our Academy.
@@ -18,14 +19,15 @@ Tammy: Alright! I'll be right back.
 = air_quest_running
 Air teacher: Are you done counting? 
 * [Yes!] -> air_quest_delivering
-* (decline)[No, let me look again.]
++ (decline)[No, let me look again.]
     Air teacher: Take as many time you need. 
 -> END
 
+
 = air_quest_delivering
 Air teacher: Great! So how many constellations did you count?
-*(wrong)[Maybe there were 4?] -> air_quest_wrong
-*(right)[I'm sure there were 5!] -> air_quest_done
++ (wrong)[Maybe there were 4?] -> air_quest_wrong
+* (right)[I'm sure there were 5!] -> air_quest_done
 -> END
 
 = air_quest_wrong
@@ -37,4 +39,8 @@ Air teacher: Good job! Now you have little taste of the things we do.
 Air teacher: I don't have any tasks for you left. Go back to the Librarian and ask her what you can do next.
 Tammy: That was great! I'm so excided about the next tasks. Thank you so much! 
 Tammy: See you!
+-> END
+
+= air_quest_final
+Air teacher: Good luck!
 -> END
