@@ -5,9 +5,9 @@ Librarian: Hello and welcome to MiauzAcademy!
 Librarian: I'm the school librarian and I'll help you to get through your first day of school. 
 Tammy: Hello! Thank you so much!
 Librarian: Since this is your first day here, you have to get to know our houses.
-Librarian: There are four different elements Fire, Water, Air and Earth. Each element represents a different specialization. 
+Librarian: There are four different elements Fire, Water, Air and Earth. Each element represents a different specialization.
 Tammy: That sounds intereseting...
-Librarian: So your task for today is to decide in which house you want to go. Therefore you have to do different tasks.
+Librarian: So your task for today is to decide in which house you want to go. Therefore you have to do different tasks from each house.
 Tammy: Alright! Where do I start?
 Librarian: At first go to the Air Teacher right behind the open gate. He will give you the first task. 
 Tammy: Ok! See you later!  

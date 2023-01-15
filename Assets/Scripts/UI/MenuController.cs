@@ -148,11 +148,7 @@ public class MenuController : MonoBehaviour
             BaseMenuClosed?.Invoke();
             optionsBG.SetActive(false);
         }
-
-        if (preventClosing && openedMenus.Count == 1)
-        {
-            optionsBG.SetActive(false);
-        }
+        
     }
 
     private void ToggleMenu(InputAction.CallbackContext _)
