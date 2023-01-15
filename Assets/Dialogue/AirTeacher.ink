@@ -25,6 +25,10 @@ Air teacher: After your done with it come back to me and tell me how many you co
 Tammy: Alright! I'll be right back.
 -> END
 
+= air_quest_pending
+Air teacher: Please use the Telescope to count the constellations.
+-> END
+
 = air_quest_running
 Air teacher: Are you done counting? 
 + [Yes!] -> air_quest_delivering
@@ -50,5 +54,5 @@ Tammy: See you!
 -> END
 
 = air_quest_final
-Air teacher: Good luck!
+Air teacher: I don't have any tasks left. Please go back to the Librarian. Good luck!
 -> END
