@@ -18,6 +18,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Handle
       objectReference: {fileID: 0}
+    - target: {fileID: 4165526365872903774, guid: 9aa06e9c1dd633f4fa5e07819a2fc1f4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4604198757921337367, guid: 9aa06e9c1dd633f4fa5e07819a2fc1f4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5712341837833676620, guid: 9aa06e9c1dd633f4fa5e07819a2fc1f4,
         type: 3}
       propertyPath: m_RootOrder

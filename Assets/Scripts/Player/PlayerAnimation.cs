@@ -3,19 +3,20 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
+    #region Inspector
+
     private static readonly int Interact = Animator.StringToHash("Interact");
-    [SerializeField] private GameObject player;
-    [SerializeField] private Animator animator;
+    private GameObject player;
+    private Animator animator;
     private AudioSource interactSound;
     private CharacterController characterController;
 
+    #endregion
+
     private void Awake()
     {
-        //interactSound = GameObject.FindWithTag("interactSound").GetComponent<AudioSource>();
-
-        player = GameObject.FindWithTag("Player");
-        animator = player.GetComponentInChildren<Animator>();
-        //characterController = player.GetComponent<CharacterController>();
+       player = GameObject.FindWithTag("Player");
+       animator = player.GetComponentInChildren<Animator>();
     }
 
     public void InteractAnim()
@@ -25,7 +26,6 @@ public class PlayerAnimation : MonoBehaviour
             interactSound.Play();
         }
         animator.Play(Interact);
-        //StartCoroutine(CD());
     }
 
     IEnumerator CD()

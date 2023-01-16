@@ -75,8 +75,8 @@ public class PlayerController : MonoBehaviour
     private Vector2 lookInput;
     private Vector2 moveInput;
 
-    private Quaternion characterTargetRotation = Quaternion.identity;
-    private Vector2 cameraRotation;
+    public Quaternion characterTargetRotation = Quaternion.identity;
+    public Vector2 cameraRotation;
     private Vector3 lastMovement;
 
     private bool isGrounded = true;
@@ -97,6 +97,10 @@ public class PlayerController : MonoBehaviour
         
         // Subscribe to input events
         input.Player.Interact.performed += Interact;
+        
+        //StartRotation 
+        characterTargetRotation = transform.rotation;
+        cameraRotation.y = transform.rotation.eulerAngles.y;
     }
 
     #region Unity Event Function
