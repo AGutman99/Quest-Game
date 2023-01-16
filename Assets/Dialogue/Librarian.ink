@@ -18,12 +18,15 @@ Librarian: Please go to the Air Teacher.
 -> END
 
 = gate_start
-Librarian: At first, you have to go through the big gate... But the handle is lost. Maybe you can find it? Go search near the big cauldron because I couldn't find it here. 
+Tammy: I'm done with my task from the Air Teacher.. 
+Tammy: So what now? 
+Librarian: Next you have to go through the big gate... But the handle is lost. Maybe you can find it? Go search near the Telescope because I couldn't find it here.
 You: Well... That sounds easy!
 -> END
 
 = gate_running
 Librarian: Did you find the handle?
+Librarian: It has to be somewhere near the Telescope. 
 You: Not yet. Still searching.
 -> END
 
