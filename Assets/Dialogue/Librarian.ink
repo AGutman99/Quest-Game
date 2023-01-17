@@ -11,6 +11,7 @@ Librarian: So your task for today is to decide in which house you want to go. Th
 Tammy: Alright! Where do I start?
 Librarian: At first go to the Air Teacher right behind the open gate. He will give you the first task. 
 Tammy: Ok! See you later!  
+~ Unity_Event("quest_list")
 -> END 
 
 =intro_running
@@ -21,20 +22,29 @@ Librarian: Please go to the Air Teacher.
 Tammy: I'm done with my task from the Air Teacher.. 
 Tammy: So what now? 
 Librarian: Next you have to go through the big gate... But the handle is lost. Maybe you can find it? Go search near the Telescope because I couldn't find it here.
-You: Well... That sounds easy!
+Tammy: Well... That sounds easy!
+~ Unity_Event("quest_list_gate")
 -> END
 
 = gate_running
 Librarian: Did you find the handle?
 Librarian: It has to be somewhere near the Telescope. 
-You: Not yet. Still searching.
+Tammy: Not yet. Still searching.
 -> END
 
 = gate_delivering
-You: I found the handle! 
+Tammy: I found the handle! 
 Librarian: Great! Use it to open the gate.
+Librarian: Oh! And one more thing. Go to the Fire Teacher next. He will have the next task for you.
+Tammy: Ok! Thank you.
 -> END
 
 = gate_finished
 Librarian: Good luck for your first day!
 -> END
+
+//= general_text
+//Librarian: If you have any questions or you're not sure what to do. Just come to me. 
+//Librarian: I'll tell you what to do. 
+//-> END
+

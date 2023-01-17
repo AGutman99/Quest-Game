@@ -27,7 +27,6 @@ public class PlayerRotation : MonoBehaviour
 
         playerController.characterTargetRotation = target.transform.rotation;
         playerController.cameraRotation.y = 0f - targetRotationY;
-        
         //particleSystem.Play();
         // ALTERNATIVE
         //particleSystem.SetActive(true);

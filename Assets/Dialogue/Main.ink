@@ -7,6 +7,12 @@ INCLUDE GateHandle.ink
 INCLUDE AirStudent.ink
 INCLUDE AirTeacher.ink
 INCLUDE Teleskop.ink
+INCLUDE FireStudent.ink
+INCLUDE EarthStudent.ink
+INCLUDE WaterStudent.ink
+
+
+
 
 
 

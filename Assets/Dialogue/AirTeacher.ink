@@ -23,6 +23,7 @@ Air teacher: Isn't it?
 Air teacher: So you first task for today, go ahead and look through the Teleskop and count the constellations. 
 Air teacher: After your done with it come back to me and tell me how many you counted. 
 Tammy: Alright! I'll be right back.
+~ Unity_Event("quest_list_air")
 -> END
 
 = air_quest_pending
