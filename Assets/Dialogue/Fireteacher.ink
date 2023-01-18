@@ -29,7 +29,7 @@ Tammy: I'm way to scared to say something else.. #thought
 -> END
 
 = firequest_running
-{Get_State("target_1") : {Unity_Event("firequest_end")} -> firequest_delivering}
+{Get_State("target_1") and Get_State("target_2") and Get_State("target_3"): {Unity_Event("firequest_end")} -> firequest_delivering}
 Fire Teacher: What's the problem? Forgot what I told you? 
 Fire Teacher: Focus, breathing, target, hit. 
 Fire Teacher: What is so hard to understand?
