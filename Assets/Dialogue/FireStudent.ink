@@ -13,7 +13,7 @@ Tammy: No... But thanks for your help, See you.
 
 = running
 Sören: ... the cyclone takes a way to unity ... 
-Sören: Oh... Hello.
+Sören: Oh! Hello.
 Sören: Is there a problem? Let me know!
 Tammy: Uhm... No all fine.
 -> END

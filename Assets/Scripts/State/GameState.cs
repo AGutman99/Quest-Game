@@ -67,6 +67,11 @@ public class GameState : MonoBehaviour
         StateChanged?.Invoke();
     }
 
+    public void AddInteraction(string target)
+    {
+        Add(target, 1);
+    }
+
     public bool CheckConditions(List<State> conditions)
     {
         foreach (State condition in conditions)

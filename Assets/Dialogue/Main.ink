@@ -15,6 +15,8 @@ INCLUDE EarthTeacher.ink
 INCLUDE Fireteacher.ink
 INCLUDE Cauldron.ink
 INCLUDE Plant.ink
+INCLUDE Target.ink
+
 
 
 

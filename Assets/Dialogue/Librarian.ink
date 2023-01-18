@@ -41,6 +41,7 @@ Tammy: Ok! Thank you.
 
 = gate_finished
 Librarian: Please go to the Fireteacher next. 
+~ Unity_Event("quest_list_fire")
 -> END
 
 //= general_text

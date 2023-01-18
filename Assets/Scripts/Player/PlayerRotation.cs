@@ -23,18 +23,10 @@ public class PlayerRotation : MonoBehaviour
 
     public void TargetRotation()
     {
-        playerController.DisableInput();
-
-        playerController.characterTargetRotation = target.transform.rotation;
-        playerController.cameraRotation.y = 0f - targetRotationY;
-        //particleSystem.Play();
-        // ALTERNATIVE
-        //particleSystem.SetActive(true);
-
-        StartCoroutine(DelayDestroy());
+       playerController.TargetRotation(target, targetRotationY);
     }
     
-    private IEnumerator DelayDestroy()
+    private IEnumerator DelayedEnableInput()
     {
         yield return new WaitForSeconds(3.8f);
         //particleSystem.Stop();

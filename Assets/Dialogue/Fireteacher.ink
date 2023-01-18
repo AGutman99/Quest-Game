@@ -25,10 +25,12 @@ Fire Teacher: Then go to the marks on the floor and try it out.
 Fire Teacher: Try to hit the Target right in the middle. 
 Tammy: Yes Sir! 
 Tammy: I'm way to scared to say something else.. #thought
+~ Unity_Event("quest_start")
 -> END
 
 = firequest_running
-Fire Teacher: Whats the problem? Forgot what I told you? 
+{Get_State("target_1") : {Unity_Event("firequest_end")} -> firequest_delivering}
+Fire Teacher: What's the problem? Forgot what I told you? 
 Fire Teacher: Focus, breathing, target, hit. 
 Fire Teacher: What is so hard to understand?
 -> END
@@ -43,6 +45,6 @@ Tammy: Yes sir!
 Tammy: Finally I can go somewhere else... #thought
 -> END
 
-= firequest_done
-Fire Teacher: You're done here. Go make your task!
+= firequest_finished
+Fire Teacher: You're done here. Go make your next task!
 -> END

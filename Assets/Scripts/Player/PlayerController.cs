@@ -1,3 +1,5 @@
+using System.Collections;
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -361,6 +363,25 @@ public class PlayerController : MonoBehaviour
             selectedInteractable.Deselect();
             selectedInteractable = null;
         }
+    }
+
+    public void TargetRotation(Transform target, float targetRotationY)
+    {
+        DisableInput();
+
+        characterTargetRotation = target.transform.rotation;
+        cameraRotation.y = 0f - targetRotationY;
+        
+        StartCoroutine(DelayedEnableInput());
+    }
+    
+    private IEnumerator DelayedEnableInput()
+    {
+        yield return new WaitForSeconds(3.8f);
+        //particleSystem.Stop();
+        // ALTERNATIVE
+        //particleSystem.SetActive(false);
+        EnableInput();
     }
 
     #endregion
