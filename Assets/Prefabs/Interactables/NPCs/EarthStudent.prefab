@@ -136,10 +136,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3046394478240590406, guid: b33ac9d94a9126c4abd74678067e4efc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5220722582961756226, guid: b33ac9d94a9126c4abd74678067e4efc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5371852424346391088, guid: b33ac9d94a9126c4abd74678067e4efc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6703603419641070960, guid: b33ac9d94a9126c4abd74678067e4efc,
         type: 3}
       propertyPath: m_Name
       value: EarthStudent
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740590265917409245, guid: b33ac9d94a9126c4abd74678067e4efc,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b33ac9d94a9126c4abd74678067e4efc, type: 3}

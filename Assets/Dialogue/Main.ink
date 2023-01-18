@@ -10,6 +10,16 @@ INCLUDE Teleskop.ink
 INCLUDE FireStudent.ink
 INCLUDE EarthStudent.ink
 INCLUDE WaterStudent.ink
+INCLUDE WaterTeacher.ink
+INCLUDE EarthTeacher.ink
+INCLUDE Fireteacher.ink
+INCLUDE Cauldron.ink
+INCLUDE Plant.ink
+
+
+
+
+
 
 
 

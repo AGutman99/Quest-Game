@@ -40,7 +40,7 @@ Tammy: Ok! Thank you.
 -> END
 
 = gate_finished
-Librarian: Good luck for your first day!
+Librarian: Please go to the Fireteacher next. 
 -> END
 
 //= general_text
