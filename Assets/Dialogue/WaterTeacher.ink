@@ -1,5 +1,13 @@
 === waterteacher ===
 
+= idle
+Water Teacher: Hm.. what if I try to add some Cherryleaves the next time?
+Water Teacher: Or some Light flakes?
+Water Teacher: That sounds great!
+Water Teacher: Hmm? I do you need something?
+Water Teacher: Im busy right now. I'm sorry. 
+-> END
+
 = waterquest_start
 Water Teacher: Oh hello there.
 Water Teacher: You are the new one right?
@@ -37,6 +45,7 @@ Water Teacher: It's a magical couldron so it will tell you when your potion is d
 Water Teacher: Just ask it sometimes.. it's forgetful.
 Tammy: I've never seen a speaking cauldron before. #thought
 Tammy: I'll be right back!
+~ Unity_Event("water_list_berry")
 -> END
 
 = waterquest_progress
@@ -58,8 +67,17 @@ Water Teacher: Well there is only one teacher left. It's the Earth teacher.
 Water Teacher: Please go there for your last task.
 Tammy: Ok! See you!
 Water Teacher: Good luck!
+~ Unity_Event("water_list_finished")
 -> END
 
 = waterquest_done
 Water Teacher: You did amazing! Have a nice day.
+-> END
+
+= earthquest_potion
+Tammy: Hi! It's me again.
+Water Teacher: Hello! Do you need something?
+Tammy: Yes. I need a Growth Potion for my current task. 
+Water Teacher: I understand. Here you go. 
+Tammy: Thank you so much! 
 -> END
