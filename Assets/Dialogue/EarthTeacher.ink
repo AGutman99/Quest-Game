@@ -41,6 +41,7 @@ Earth Teacher: But for today you'll learn something about plants.
 Earth Teacher: You'll plant your own Sunflower today.
 Tammy: Amazing! 
 Earth Teacher: So here is your seed. Go outside and plant it.
+~ Unity_Event("earth_list_start")
 -> END
 
 = earthquest_pending
@@ -61,11 +62,25 @@ Earth Teacher: Yes. But it's for learning purposes only.
 Earth Teacher: We try to grow our plants as naturally as possible. 
 Tammy: Of course!
 Tammy: I'll be right back. 
+-> earthquest_wip
+~ Unity_Event("earth_list_potion")
+-> END
+
+= earthquest_wip
+Earth Teacher: Do you have the Potion?
+Tammy: Not yet.
 -> END
 
 = earthquest_delivering
 Tammy: I got the Growth Potion.
 Earth Teacher: Good. Go use it on your plant. 
+-> earthquest_used
+~ Unity_Event("earth_list_grow")
+-> END
+
+= earthquest_used
+Earth Teacher: Did you use the potion?
+Tammy: Uhm... no. 
 -> END
 
 = earthquest_done
@@ -75,4 +90,5 @@ Earth Teacher: So I think you're done with your tasks for today.
 Earth Teacher: Please go back to the Librarian.
 Earth Teacher: She'll tell you everything about the next step. 
 Tammy: Alright! Thank you so much. 
+~ Unity_Event("earth_list_goback")
 -> END

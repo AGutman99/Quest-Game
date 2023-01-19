@@ -80,4 +80,5 @@ Water Teacher: Hello! Do you need something?
 Tammy: Yes. I need a Growth Potion for my current task. 
 Water Teacher: I understand. Here you go. 
 Tammy: Thank you so much! 
+~ Unity_Event("earth_list_goback")
 -> END
