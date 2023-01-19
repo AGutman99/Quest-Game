@@ -19,10 +19,12 @@ Water Teacher: I have almost all ingridients here. Only one is left.
 Water Teacher: It's a pink tree lechee. 
 Water Teacher: Go to the Earth Teacher and ask if you can pick one from their garden.
 Tammy: Sure! I'll get it for you.
+~ Unity_Event("water_list_start")
 -> END
 
 = waterquest_pending
 Water Teacher: Do you have the pink tree lechee?
+Water Teacher: You can get it from the Earth Teacher.
 Tammy: No.. Sorry.
 -> END
 

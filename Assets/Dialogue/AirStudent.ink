@@ -2,7 +2,6 @@
 {librarian: -> running}
 -> welcome
 
-
 = welcome
 Dennis: Hey! Welcome! You must be new. 
 Dennis: If you have any questions go to the Librarian. 
