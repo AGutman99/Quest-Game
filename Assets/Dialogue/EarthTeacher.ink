@@ -62,7 +62,6 @@ Earth Teacher: Yes. But it's for learning purposes only.
 Earth Teacher: We try to grow our plants as naturally as possible. 
 Tammy: Of course!
 Tammy: I'll be right back. 
--> earthquest_wip
 ~ Unity_Event("earth_list_potion")
 -> END
 
@@ -74,7 +73,6 @@ Tammy: Not yet.
 = earthquest_delivering
 Tammy: I got the Growth Potion.
 Earth Teacher: Good. Go use it on your plant. 
--> earthquest_used
 ~ Unity_Event("earth_list_grow")
 -> END
 
@@ -90,5 +88,5 @@ Earth Teacher: So I think you're done with your tasks for today.
 Earth Teacher: Please go back to the Librarian.
 Earth Teacher: She'll tell you everything about the next step. 
 Tammy: Alright! Thank you so much. 
-~ Unity_Event("earth_list_goback")
+~ Unity_Event("earth_list_gotolib")
 -> END

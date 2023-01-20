@@ -43,6 +43,7 @@ Fire Teacher: I'm done with you for today.
 Fire Teacher: Go to your next task. Talk to the Water Teacher next to the big cauldron. 
 Tammy: Yes sir! 
 Tammy: Finally I can go somewhere else... #thought
+~ Unity_Event("quest_goto_water")
 -> END
 
 = firequest_finished

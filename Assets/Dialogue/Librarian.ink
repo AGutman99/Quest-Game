@@ -37,15 +37,36 @@ Tammy: I found the handle!
 Librarian: Great! Use it to open the gate.
 Librarian: Oh! And one more thing. Go to the Fire Teacher next. He will have the next task for you.
 Tammy: Ok! Thank you.
+~ Unity_Event("quest_list_fire")
 -> END
 
 = gate_finished
 Librarian: Please go to the Fireteacher next. 
-~ Unity_Event("quest_list_fire")
 -> END
 
 //= general_text
 //Librarian: If you have any questions or you're not sure what to do. Just come to me. 
 //Librarian: I'll tell you what to do. 
 //-> END
+
+= choose_element
+Tammy: I'm done with all my tasks!
+Librarian: Great. So now it is time to choose your Element. 
+Tammy: I'm so excited. 
+Librarian: Choose wisely. 
+Tammy: Alright. 
+Librarian: Remember there are
+Librarian: Water for Potion making.
+Librarian: Fire for Fighting.
+Librarian: Air for Stars and Constellations.
+Librarian: And Earth for Plants and Animals.
+Librarian: If you made your decision you can't go back. 
+    *[Water] {Unity_Event("choice_water")} -> DONE
+    *[Fire] {Unity_Event("choice_fire")} -> DONE
+    *[Air] {Unity_Event("choice_air")} -> DONE
+    *[Earth] {Unity_Event("choice_earth")} -> DONE
+Librarian: Great choice! 
+Librarian: You're done for today and there no tasks left.
+Librarian: Now you can go back to the dorm and relax until the next day.
+-> END
 
