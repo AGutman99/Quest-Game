@@ -1,5 +1,8 @@
 
+using System.Collections;
+
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -98,5 +101,17 @@ public class GameController : MonoBehaviour
     private void EndDialogue()
     {
         EnterPlayMode();
+    }
+
+    public void EndGame()
+    {
+        StartCoroutine("waitEnd");
+    }
+    
+    IEnumerator waitEnd()
+    {
+        yield return new WaitForSeconds(1.5f);
+        
+        SceneManager.LoadScene("MainMenu");
     }
 }
