@@ -16,6 +16,8 @@ INCLUDE Target.ink
 INCLUDE Target_2.ink
 INCLUDE Target_3.ink
 INCLUDE Sunflower.ink
+INCLUDE Dormroom.ink
+
 
 
 
