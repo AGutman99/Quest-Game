@@ -87,6 +87,7 @@ public class MenuController : MonoBehaviour
 
     public void ToMainMenu()
     {
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene(menuScene);
     }
 

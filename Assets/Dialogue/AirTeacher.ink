@@ -40,8 +40,8 @@ Air Teacher: Are you done counting?
 
 = air_quest_delivering
 Air Teacher: Great! So how many constellations did you count?
-* (right)[I'm sure there were 5!] -> air_quest_done
-+ (wrong)[Maybe there were 4?]
+* (right)[I'm sure there were 4!] -> air_quest_done
++ (wrong)[Maybe there were 6?]
     Air Teacher: Are you sure? Maybe take another look.
 -> END
 

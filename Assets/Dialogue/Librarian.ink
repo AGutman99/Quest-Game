@@ -61,19 +61,19 @@ Librarian: Fire for fighting.
 Librarian: Air for stars and constellations.
 Librarian: And Earth for plants and animals.
 Librarian: Once you make your decision, you can't go back. 
-    *[Water] {Unity_Event("choice_wasser")} 
+*[Water] {Unity_Event("choice_wasser")}
     Librarian: Great choice! 
     Librarian: You're done for today and there are no tasks left.
     Librarian: Now you can go back to the dorm and relax until the next day. -> DONE
-    *[Fire] {Unity_Event("choice_feuer")} 
+*[Fire] {Unity_Event("choice_feuer")} 
     Librarian: Great choice! 
     Librarian: You're done for today and there are no tasks left.
     Librarian: Now you can go back to the dorm and relax until the next day. -> DONE
-    *[Air] {Unity_Event("choice_luft")} 
+*[Air] {Unity_Event("choice_luft")} 
     Librarian: Great choice! 
     Librarian: You're done for today and there are no tasks left.
     Librarian: Now you can go back to the dorm and relax until the next day. -> DONE
-    *[Earth] {Unity_Event("choice_erde")} 
+*[Earth] {Unity_Event("choice_erde")} 
     Librarian: Great choice! 
     Librarian: You're done for today and there are no tasks left.
     Librarian: Now you can go back to the dorm and relax until the next day.

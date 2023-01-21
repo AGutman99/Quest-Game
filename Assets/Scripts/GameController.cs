@@ -112,6 +112,7 @@ public class GameController : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
         
-        menuController.QuitGame();
+        Cursor.lockState = CursorLockMode.None;
+        SceneManager.LoadScene(0);
     }
 }
