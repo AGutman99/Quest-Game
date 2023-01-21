@@ -105,13 +105,13 @@ public class GameController : MonoBehaviour
 
     public void EndGame()
     {
-        StartCoroutine("waitEnd");
+        StartCoroutine(waitEnd());
     }
     
     IEnumerator waitEnd()
     {
         yield return new WaitForSeconds(1.5f);
         
-        SceneManager.LoadScene("MainMenu");
+        menuController.QuitGame();
     }
 }

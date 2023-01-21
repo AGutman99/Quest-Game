@@ -79,3 +79,7 @@ Librarian: If you made your decision you can't go back.
     Librarian: Now you can go back to the dorm and relax until the next day.
 -> END
 
+= idle
+Librarian: You can go to you dorm now and take a break. 
+-> END
+
