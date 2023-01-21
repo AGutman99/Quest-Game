@@ -1,7 +1,7 @@
 === sunflower ===
 
 = planted
-Tammy: Here it go. #thought
+Tammy: Here it goes. #thought
 -> END
 
 = potion 

@@ -22,9 +22,9 @@ Cauldron: It's not done yet.
 Tammy: Is the potion done?
 Cauldron: What potion?
 Tammy: My healing potion? 
-Cauldron: Ahh yes.
+Cauldron: Ahh, yes.
 Tammy: So is it done?
-Cauldron: No not yet.
+Cauldron: No, not yet.
 //-> cooking_3
 -> END
 
@@ -38,11 +38,11 @@ Cauldron: Still cooking.
 = cooking_done
 Tammy: Is it done now?
 Cauldron: blubber #thought
-Tammy: Please I need this potion.
+Tammy: Please, I need this potion.
 Cauldron: I guess it's done.
 Tammy: Are you sure?
 Cauldron: I think so.
-Tammy: Ok, I take it. 
+Tammy: Okay, I'll take it. 
 ~ Unity_Event("water_list_cooked")
 -> END
 

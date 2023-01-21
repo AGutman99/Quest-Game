@@ -12,21 +12,21 @@ Pascal: Uuuuh... If you say so?
 -> END
 
 = dialog_2
-Pascal: If the circumference of the circle is equivalent.. then the arcane energe.. #thought
-Pascal: but the elemental spells.. then...? #thought
+Pascal: If the circumference of the circle is equivalent... then the arcane energy... #thought
+Pascal: But the elemental spells... then...? #thought
 Pascal: But what about the reactor? #thought
 Pascal: I think I'll go to the library later... #thought
 -> END
 
 = dialog_3
-Pascal: Did you know if you mix some Balsamweed, Kaduzuleaves and Magnapetals, you'll get an AMAZING potion?
+Pascal: Did you know that if you mix some Balsamweed, Kaduzuleaves and Magnapetals, you'll get an AMAZING potion?
 Yves: And what effect does it have?
 Pascal: Well... 
-Pascal: Don't tell it any teacher...
-Pascal: I used it in the last Runelore lesson for concentration. I can literally remember everything!!
+Pascal: Don't tell a teacher...
+Pascal: I used it in the last runelore lesson for concentration. I can literally remember everything!
 Yves: Really? That's amazing.
 Yves: So maybe YOU can help me now!
-Pascal: Sure! Ask anything! 
+Pascal: Sure! Ask me anything! 
 Tammy: I don't understand any of these words... #thought
 -> END
 

@@ -1,7 +1,7 @@
 === earthteacher ===
 
 = idle 
-Earth Teacher: Lalala.. Mhh.. Hmmhmm...
+Earth Teacher: Lalala... Mhh... Hmmhmm...
 Earth Teacher: *working* #thought
 Tammy: Maybe I should'nt disturb her. #thought
 -> END
@@ -15,8 +15,8 @@ Earth Teacher: Where du you come from? You scared me!
 Tammy: I'm so sorry! Honestly.
 Earth Teacher: No it's fine. I'm always so focused on my work. 
 Earth Teacher: So what do you need?
-Tammy: I need a pink tree lechee. I saw a lot outside.
-Earth Teacher: Yeah. But they're not ripe yet.
+Tammy: I need a pink tree lechee. I saw a lot of them outside.
+Earth Teacher: Yeah, but they're not ripe yet.
 Earth Teacher: Here you have one. 
 Tammy: Thank you so much!
 Earth Teacher: You're welcome. See you later. 
@@ -28,17 +28,17 @@ Earth Teacher: *working* #thought
 Tammy: Uhm... Hello? 
 Earth Teacher: *working* #thought
 Tammy: Hello I'm sorry, it's me again ... 
-Earth Teacher: Uh hello there! I didn't recognize you. Sorry.
+Earth Teacher: Uh, hello there! I didn't recognize you. Sorry.
 Earth Teacher: How can I help you?
 Tammy: Yes! Hi! I'm new here and the Water Teacher told me that you have a task for me.
-Earth Teacher: Hmm.. do I? I know.. there was something...
+Earth Teacher: Hmm... do I? I know.. there was something...
 Earth Teacher: Yeah! I remember. I have to tell you something about our Element.
-Earth Teacher: Soo.. about the Earth Element. 
+Earth Teacher: Soo... about the Earth Element... 
 Earth Teacher: We're pretty calm and into our work. We are in close contact with nature, plants and animals. 
-Tammy: Oh I love animals!
+Tammy: Oh, I love animals!
 Earth Teacher: That's great.
 Earth Teacher: But for today you'll learn something about plants.
-Earth Teacher: You'll plant your own Sunflower today.
+Earth Teacher: You'll plant your own sunflower today.
 Tammy: Amazing! 
 Earth Teacher: So here is your seed. Go outside and plant it.
 ~ Unity_Event("earth_list_start")
@@ -50,13 +50,13 @@ Tammy: Uhm... no.
 -> END
 
 = earthquest_progress
-Tammy: I planted the Sunflowerseed.
+Tammy: I planted the sunflower seed.
 Earth Teacher: Great! But since it'll take a long time to grow, we can speed up the progress.
 Tammy: How?
 Earth Teacher: You already learned that the Water Element can make many different potions with different effects. 
 Earth Teacher: Right?
 Tammy: Right!
-Earth Teacher: That means you have to go to the Water Teacher and ask them for a Growth Potion. 
+Earth Teacher: That means you have to go to the Water Teacher and ask them for a growth potion. 
 Tammy: Really? Oh it's so exciting!
 Earth Teacher: Yes. But it's for learning purposes only. 
 Earth Teacher: We try to grow our plants as naturally as possible. 
@@ -66,12 +66,12 @@ Tammy: I'll be right back.
 -> END
 
 = earthquest_wip
-Earth Teacher: Do you have the Potion?
+Earth Teacher: Do you have the potion?
 Tammy: Not yet.
 -> END
 
 = earthquest_delivering
-Tammy: I got the Growth Potion.
+Tammy: I got the growth potion.
 Earth Teacher: Good. Go use it on your plant. 
 ~ Unity_Event("earth_list_grow")
 -> END

@@ -1,7 +1,7 @@
 === gatehandle ===
 
 = closed
-You: Hm.. something seems to be is missing... #thought
+You: Hm... something seems to be missing... #thought
 -> END
 
 = opening
