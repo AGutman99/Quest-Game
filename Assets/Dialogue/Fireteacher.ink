@@ -36,7 +36,7 @@ Fire Teacher: What is so hard to understand?
 -> END
 
 = firequest_delivering
-Fire Teacher: Well.. .
+Fire Teacher: Well...
 Fire Teacher: I don't say it that often... but you did a great job!
 Tammy: Thank you Sir! 
 Fire Teacher: I'm done with you for today.
