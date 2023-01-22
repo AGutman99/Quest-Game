@@ -44,11 +44,6 @@ Tammy: Okay, thank you!
 Librarian: Please go to the Fire Teacher next. 
 -> END
 
-//= general_text
-//Librarian: If you have any questions or you're not sure what to do. Just come to me. 
-//Librarian: I'll tell you what to do. 
-//-> END
-
 = choose_element
 Tammy: I'm done with all of my tasks!
 Librarian: Great, so now it's time to choose your element!
