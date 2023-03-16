@@ -21,7 +21,7 @@ Librarian: Please go to the Air Teacher.
 = gate_start
 Tammy: I'm done with my task from the Air Teacher... 
 Tammy: So what's next?
-Librarian: Next you have to go through the big gate.... But the handle is lost. Perhaps you can find it? Go search near the telescope, because I couldn't find it here.
+Librarian: Next you have to go through the big gate... But the handle is lost. Perhaps you can find it? Go search near the telescope, because I couldn't find it here.
 Tammy: Well... That sounds easy!
 ~ Unity_Event("quest_list_gate")
 -> END

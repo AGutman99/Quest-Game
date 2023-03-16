@@ -40,8 +40,8 @@ Tammy: No... I am sorry.
 Tammy: I have the pink tree lechee!
 Water Teacher: Great! Here are the other ingredients.
 Water Teacher: A sour sprout, a sweet blue lemon and your pink tree lechee. 
-Water Teacher: Put everything in the couldron and wait a little bit until it's done. 
-Water Teacher: It's a magical couldron so it will tell you when your potion is done.
+Water Teacher: Put everything in the cauldron and wait a little bit until it's done. 
+Water Teacher: It's a magical cauldron so it will tell you when your potion is done.
 Water Teacher: Just remind it sometimes.. it's forgetful.
 Tammy: I've never seen a speaking cauldron before. #thought
 Tammy: I'll be right back!

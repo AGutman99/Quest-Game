@@ -11,7 +11,7 @@ Tammy: Hi! The Water Teacher send me to you and...
 Earth Teacher: *working*
 Tammy: and... I need a pink tree lechee. Do...
 Earth Teacher: HUH?!
-Earth Teacher: Where du you come from? You scared me!
+Earth Teacher: Where do you come from? You scared me!
 Tammy: I'm so sorry! Honestly.
 Earth Teacher: No it's fine. I'm always so focused on my work. 
 Earth Teacher: So what do you need?
